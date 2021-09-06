@@ -1,0 +1,62 @@
+
+  * {box-sizing: content-box;
+    font-size: calc(1vw + 1vh + .5vmin);
+  margin:0;
+  padding:0;
+  text-decoration:none;
+
+  }
+
+p{
+    position:absolute;
+    top:50%;
+    left:30px;
+    transform:translateY(-70%);
+    font-size:2em;
+    font-weight:900;
+    font-family: 'indie flower';
+  }
+  .frame{
+    background: url("https://static.euronews.com/articles/stories/05/11/17/10/1440x810_cmsv2_0c77b96a-4a40-5f6f-b33c-a15e4be1b1b6-5111710.jpg");
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=24845), auto;
+    width:100vw;
+    height:100vh;
+  overflow:hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transform-style: preserve-3d;
+    perspective:300;
+    background-size:cover;  
+  
+  }
+  .page1{
+    width:12em;
+    height:18em;
+    background:url("https://previews.123rf.com/images/sabphoto/sabphoto1108/sabphoto110800099/10232770-extreme-big-size-of-old-paper-page-texture.jpg");
+    background-size: cover;
+    position: absolute;
+    top:10vh;
+    left:15em;
+  transition: transform 0.6s linear;
+    transform-origin: 0% 50%;
+  z-index:1
+  }
+  .page2{
+    width:12em;
+    height:18em;
+    background:url("https://previews.123rf.com/images/sabphoto/sabphoto1108/sabphoto110800099/10232770-extreme-big-size-of-old-paper-page-texture.jpg");
+    background-size: cover;
+  
+    position: absolute;
+    top:10vh;
+    left:15em;  
+  transition: transform 0.6s linear;
+    transform-origin: 0% 50%;
+  }
+  .frame:hover .page1{
+  transform:rotateY(-180deg);
+  }
+  
+  
